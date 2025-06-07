@@ -112,6 +112,6 @@ Files can hide, but they can’t escape your command line.
 
 ### 📹 Video Training Link
 
-[![Watch the video](../../../sna1.png)](unit-101-sr-003.mp4)
+[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=Jo1Nb1HbPUg)
 
 ---

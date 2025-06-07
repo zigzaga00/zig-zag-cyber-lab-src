@@ -101,6 +101,6 @@ Use the tools given on this technique card to explore the data.
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](csv-pandas-practical.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=XjNZK14qDp0)
 
 ---

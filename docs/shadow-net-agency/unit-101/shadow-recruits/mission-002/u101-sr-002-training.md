@@ -146,6 +146,6 @@ Practice your skills:
 
 ### 📹 Video Training Link
 
-[![Watch the video](../../../sna1.png)](unit-101-sr-002.mp4)
+[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=Nroj4VsI7ZM)
 
 ---

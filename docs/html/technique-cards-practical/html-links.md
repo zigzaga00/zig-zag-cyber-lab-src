@@ -108,6 +108,6 @@ Links were the **original magic** of the web — connecting ideas and pages like
 
 ### 📹 Video Link
 
-[![Watch the video](../network1.png)](html-links.mp4)
+[![Watch the video](../network1.png)](https://www.youtube.com/watch?v=R8HhHR6PM4U)
 
 ---

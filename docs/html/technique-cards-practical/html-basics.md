@@ -84,6 +84,6 @@ Change these bits and see what happens:
 
 ### 📹 Video Link
 
-[![Watch the video](../network1.png)](html-basics.mp4)
+[![Watch the video](../network1.png)](https://www.youtube.com/watch?v=arwk5DEkjNw)
 
 ---

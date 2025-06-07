@@ -117,6 +117,6 @@ Create a short story with **3 backdrops**. When the green flag is clicked, the b
 
 ### 📹 Video Link
 
-[![Watch the video](../cat4.png)](./costumes-1.mp4)
+[![Watch the video](../cat4.png)](https://www.youtube.com/watch?v=Huy7iAt-lEY)
 
 ---

@@ -99,6 +99,6 @@ Here’s what that means:
 
 ### 📹 Video Link
 
-[![Watch the video](../cat4.png)](./variables-scratch-1.mp4)
+[![Watch the video](../cat4.png)](https://www.youtube.com/watch?v=p4JwOpNJ9SU)
 
 ---

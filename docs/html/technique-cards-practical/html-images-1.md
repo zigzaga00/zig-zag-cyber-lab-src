@@ -87,6 +87,6 @@ Lots of images found online are **copyright** protected - we can get free, good 
 
 ### 📹 Video Link
 
-[![Watch the video](../network1.png)](html-images-1.mp4)
+[![Watch the video](../network1.png)](https://www.youtube.com/watch?v=W1zwsHIL9vY)
 
 ---

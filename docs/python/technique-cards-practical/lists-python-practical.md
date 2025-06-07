@@ -103,6 +103,6 @@ To learn more about **lists in Python** please see the following card:
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](lists-python-practical.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=wOizQ1hh5Ic)
 
 ---

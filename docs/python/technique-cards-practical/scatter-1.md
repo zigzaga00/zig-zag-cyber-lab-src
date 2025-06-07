@@ -138,18 +138,18 @@ plt.show()
 
 ### 📹 Video Link - Basic Scatter Graphs
 
-[![Watch the video](../python.png)](scatter-1.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=zhQ4ObpcjbA)
 
 ---
 
 ### 📹 Video Link - Real World Data
 
-[![Watch the video](../python.png)](scatter-2.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=FShdpa6YPqE)
 
 ---
 
 ### 📹 Video Link - Adding Labels to Data Points
 
-[![Watch the video](../python.png)](scatter-3.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=pxiwd1yBQzw)
 
 ---

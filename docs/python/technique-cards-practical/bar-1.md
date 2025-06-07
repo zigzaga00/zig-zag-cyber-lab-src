@@ -123,12 +123,12 @@ plt.show()
 
 ### 📹 Video Link - Basic Bar Charts
 
-[![Watch the video](../python.png)](bar-1.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=sxR7LYgER5Q)
 
 ---
 
 ### 📹 Video Link - Real World Data
 
-[![Watch the video](../python.png)](bar-2.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=YEj_z2UZOIA)
 
 ---

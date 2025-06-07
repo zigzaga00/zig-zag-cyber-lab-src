@@ -81,6 +81,6 @@ You can learn more about **lists** in general and more specifically Scratch: [Te
 
 ### 📹 Video Link
 
-[![Watch the video](../cat4.png)](./lists-scratch-1.mp4)
+[![Watch the video](../cat4.png)](https://www.youtube.com/watch?v=aMPXLxkkNo0)
 
 ---

@@ -113,6 +113,6 @@ You’ll learn how to fix that with **error handling** in other technique cards.
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](input-python-practical.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=afb89NuttGg)
 
 ---

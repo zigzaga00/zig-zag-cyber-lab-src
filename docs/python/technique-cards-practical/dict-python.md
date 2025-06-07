@@ -103,6 +103,6 @@ The **values** in a Python **dictionary** can be any **datatype** such as **stri
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](dict-python.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=Fq0mYaAeGcw)
 
 ---

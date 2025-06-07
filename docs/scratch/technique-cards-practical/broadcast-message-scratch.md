@@ -96,6 +96,6 @@ Let’s have Cat and Penguin talk...
 
 ### ### 📹 Video Link
 
-[![Watch the video](../cat4.png)](./message.mp4)
+[![Watch the video](../cat4.png)](https://www.youtube.com/watch?v=GHvtCPxfRqA)
 
 ---

@@ -96,6 +96,6 @@ Then try printing the second thing in the first list.
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](indexing-python.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=GL25wyRtfg8)
 
 ---

@@ -97,12 +97,12 @@ asia_or_europe_df = df[(df["continent"] == "asia") | (df["continent"] == "europe
 
 ### 📹 Video Link - Filtering Data
 
-[![Watch the video](../python.png)](filtering-pandas-1.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=XlOl-HHB5-s)
 
 ---
 
 ### 📹 Video Link - Filtering With Multiple Conditions
 
-[![Watch the video](../python.png)](filtering-pandas-2.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=1fHiPB2WegY)
 
 ---

@@ -145,6 +145,6 @@ cities = [("London", 15), ("Paris", 18), ("Oslo", 10)]
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](tuples.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=PTklQ91F4a4)
 
 ---

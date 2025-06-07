@@ -119,6 +119,6 @@ Practice your stealth:
 
 ### 📹 Video Training Link
 
-[![Watch the video](../../../sna1.png)](unit-101-sr-001.mp4)
+[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=jLGRM2tlEyA)
 
 ---

@@ -78,6 +78,6 @@ print(list_of_pairs)
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](iterating-dict.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=6FVclsLq7HE)
 
 ---

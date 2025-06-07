@@ -105,6 +105,6 @@ Then compare it to a different class or time of year!
 
 ### 📹 Video Link
 
-[![Watch the video](../data1.png)](two-graph.mp4)
+[![Watch the video](../data1.png)](https://www.youtube.com/watch?v=QLID52tbjGM)
 
 ---

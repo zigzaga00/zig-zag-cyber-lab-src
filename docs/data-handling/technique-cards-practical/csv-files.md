@@ -100,6 +100,6 @@ Then try changing the file in the text editor and reloading it.
 
 ### 📹 Video Link
 
-[![Watch the video](../data1.png)](csv-files.mp4)
+[![Watch the video](../data1.png)](https://www.youtube.com/watch?v=6Y2ARtgbTSc)
 
 ---

@@ -81,6 +81,6 @@ Or mix things up with silly food combos:
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](random-choice-list-python-practical.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=kHixgtLLUDw)
 
 ---

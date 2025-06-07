@@ -93,4 +93,4 @@ You can find out more about `str` and `int` by checking out [Technique Card: str
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](str-int-python-practical.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=vYuiwllCV1A)

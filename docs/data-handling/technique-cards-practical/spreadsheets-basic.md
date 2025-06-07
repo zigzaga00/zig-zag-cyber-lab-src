@@ -98,6 +98,6 @@ Spreadsheets help you **make sense of the world** with numbers. They let you fin
 
 ### 📹 Video Link
 
-[![Watch the video](../data1.png)](spreadsheets-basic.mp4)
+[![Watch the video](../data1.png)](https://www.youtube.com/watch?v=PI93YM0AwLI)
 
 ---

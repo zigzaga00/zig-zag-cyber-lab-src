@@ -131,6 +131,6 @@ To look at how to actually use `str` and `int` in projects please check out:
 
 ### 📹 Video Link
 
-[![Watch the video](../python.png)](str-int-deeper.mp4)
+[![Watch the video](../python.png)](https://www.youtube.com/watch?v=tafvGBxYp5Q)
 
 ---
