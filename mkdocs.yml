@@ -1,0 +1,104 @@
+site_name: Zig-Zag Cyber Lab
+nav:
+  - Home: index.html
+  - Landing Page: landing/landing.md
+  - Data Handling:
+      - Technique Cards Practical:
+          - CSV Files: data-handling/technique-cards-practical/csv-files.md
+          - Spreadsheet Basics: data-handling/technique-cards-practical/spreadsheets-basic.md
+          - Two Graph: data-handling/technique-cards-practical/two-graph.md
+      - Technique Cards Deeper:
+          - Correlation: data-handling/technique-cards-deeper/correlation.md
+          - Graph Choice: data-handling/technique-cards-deeper/graph-choice.md
+          - Percentages: data-handling/technique-cards-deeper/percentages.md
+          - Data Stories: data-handling/technique-cards-deeper/stories.md
+  - Digital Changemakers:
+      - Project Ideas:
+          - Fishy Business: digital-changemakers/project-ideas/fishy-business-project.md
+          - Forest Explorers: digital-changemakers/project-ideas/forest-explorers.md
+          - Local Food, Global Impact: digital-changemakers/project-ideas/local-food-global-impact-project.md
+          - Local Food, Global Impact (scratch version): digital-changemakers/project-ideas/local-food-global-impact-scratch-project.md
+          - Mood Menders: digital-changemakers/project-ideas/mood-menders.md
+      - Technique Cards Deeper:
+          - Carbon Footprints (deeper): digital-changemakers/technique-cards-deeper/carbon-footprints-deeper.md
+  - HTML:
+      - Technique Cards Practical:
+          - Basics: html/technique-cards-practical/html-basics.md
+          - Images 1: html/technique-cards-practical/html-images-1.md
+          - Links: html/technique-cards-practical/html-links.md
+  - Python:
+      - Project Ideas:
+          - Band Name Generator: python/project-ideas/band-name-generator-python-project.md
+      - Technique Cards Practical:
+          - Bar Charts (matplotlib): python/technique-cards-practical/bar-1.md
+          - CSV Files (Pandas): python/technique-cards-practical/csv-pandas-practical.md
+          - Dictionaries: python/technique-cards-practical/dict-python.md
+          - Filtering Data (Pandas): python/technique-cards-practical/filtering-pandas-1.md
+          - Indexing: python/technique-cards-practical/indexing-python.md
+          - Input: python/technique-cards-practical/input-python-practical.md
+          - Iterating Dictionaries: python/technique-cards-practical/iterating-dict.md
+          - Lists: python/technique-cards-practical/lists-python-practical.md
+          - Random Choice from Lists: python/technique-cards-practical/random-choice-list-python-practical.md
+          - Scatter Graphs (matplotlib): python/technique-cards-practical/scatter-1.md
+          - Strings and Integers: python/technique-cards-practical/str-int-python-practical.md
+          - Tuples: python/technique-cards-practical/tuples.md
+      - Technique Cards Deeper:
+          - Lists (deeper): python/technique-cards-deeper/lists-python-deeper.md
+          - Modules (deeper): python/technique-cards-deeper/modules-python-deeper.md
+          - Pandas Series and Dataframes (deeper): python/technique-cards-deeper/series-df.md
+          - String and Integer (deeper): python/technique-cards-deeper/str-int-python-deeper.md
+  - Scratch:
+      - Project Ideas:
+          - Virtual Fish Tank: scratch/project-ideas/virtual-fish-tank-scratch-project.md
+      - Technique Cards Practical:
+          - Broadcast Messages: scratch/technique-cards-practical/broadcast-message-scratch.md
+          - Costumes and Backdrops: scratch/technique-cards-practical/costumes-scratch-practical.md
+          - Lists: scratch/technique-cards-practical/lists-scratch.md
+          - Variables: scratch/technique-cards-practical/variables-scratch.md
+      - Technique Cards Deeper:
+          - Lists (deeper): scratch/technique-cards-deeper/lists-scratch-deeper.md
+  - Shadow Net Agency:
+      - SNA: shadow-net-agency/sna-landing.md
+      - Unit 101:
+          - Terminal Tigers: shadow-net-agency/unit-101/unit-101-the-terminal-tigers.md
+          - Shadow Recruits:
+              - Terminal Tigers Shadow Recruits: shadow-net-agency/unit-101/shadow-recruits/unit-101-the-terminal-tigers-shadow-recruit.md
+              - Mission 001:
+                  - Mission 001: shadow-net-agency/unit-101/shadow-recruits/mission-001/u101-sr-001-mission.md
+                  - Training Card: shadow-net-agency/unit-101/shadow-recruits/mission-001/u101-sr-001-training.md
+              - Mission 002:
+                  - Mission 002: shadow-net-agency/unit-101/shadow-recruits/mission-002/u101-sr-002-mission.md
+                  - Training Card: shadow-net-agency/unit-101/shadow-recruits/mission-002/u101-sr-002-training.md
+              - Mission 003:
+                  - Mission 003: shadow-net-agency/unit-101/shadow-recruits/mission-003/u101-sr-003-mission.md
+                  - Training Card: shadow-net-agency/unit-101/shadow-recruits/mission-003/u101-sr-003-training.md
+              - Mission 004:
+                  - Mission 004: shadow-net-agency/unit-101/shadow-recruits/mission-004/u101-sr-004-mission.md
+                  - Training Card: shadow-net-agency/unit-101/shadow-recruits/mission-004/u101-sr-004-training.md
+              - Mission 005:
+                  - Mission 005: shadow-net-agency/unit-101/shadow-recruits/mission-005/u101-sr-005-mission.md
+                  - Training Card: shadow-net-agency/unit-101/shadow-recruits/mission-005/u101-sr-005-training.md
+              - Mission 006:
+                  - Mission 006: shadow-net-agency/unit-101/shadow-recruits/mission-006/u101-sr-006-shadow-vault.md
+      - Unit 202:
+          - Network Geckos: shadow-net-agency/unit-202/unit-202-the-network-geckos.md
+          - Shadow Recruits:
+              - Network Geckos Shadow Recruits: shadow-net-agency/unit-202/shadow-recruits/unit-202-the-network-geckos-shadow-recruit.md
+              - Mission 001:
+                  - Mission 001: shadow-net-agency/unit-202/shadow-recruits/mission-001/u202-sr-001-mission.md
+                  - Training Card: shadow-net-agency/unit-202/shadow-recruits/mission-001/u202-sr-001-training.md
+      - Wiki:
+          - SNA Wiki: shadow-net-agency/sna-wiki/sna-wiki-landing.md
+          - SNA History:
+              - Blackout Protocol Incident: shadow-net-agency/sna-wiki/sna-wiki-history/blackout-protocol-incident.md
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: pink
+  font:
+    text: Open Sans
+    code: Fira Code
+markdown_extensions:
+  - admonition
