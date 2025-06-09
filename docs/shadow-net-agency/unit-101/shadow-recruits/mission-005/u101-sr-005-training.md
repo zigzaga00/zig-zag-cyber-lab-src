@@ -156,6 +156,6 @@ Keep your eyes open, recruits. Not every account on the system is what it seemsâ
 
 ### ðŸ“¹ Video Training Link
 
-[![Watch the video](../../../sna1.png)](unit-101-sr-005.mp4)
+[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=vP5nB3t3Deo)
 
 ---

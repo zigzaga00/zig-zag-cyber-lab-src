@@ -106,18 +106,18 @@ A common configuration for a **subnet** is to use the first three octets for the
 
 ### 📹 Video Training Link (Part 1)
 
-[![Watch the video](../../../sna1.png)](unit-202-sr-001-1.mp4)
+[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=CfdihYz83wY)
 
 ---
 
 ### 📹 Video Training Link (Part 2)
 
-[![Watch the video](../../../sna1.png)](unit-202-sr-001-2.mp4)
+[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=y2pJZ4aBXnc)
 
 ---
 
 ### 📹 Video Training Link (Part 3)
 
-[![Watch the video](../../../sna1.png)](unit-202-sr-001-3.mp4)
+[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=Chowcf3zCoc)
 
 ---

@@ -15,7 +15,7 @@ tags: ["202", sna]
 
 ### 🧠 **Briefing**
 
-ShadowNet’s internal sensors have detected a _power surge and network activity_ from a long-decommissioned terminal inside **Echo-Sector**—a hidden, classified subnet last used during the **[Blackout-Protocol Incident](./blackout-protocol-incident.md)**
+ShadowNet’s internal sensors have detected a _power surge and network activity_ from a long-decommissioned terminal inside **Echo-Sector**—a hidden, classified subnet last used during the **[Blackout-Protocol Incident](../../../sna-wiki/sna-wiki-history/blackout-protocol-incident.md)**
 
 The system is known only as:
 **`node17.echo.local`**
