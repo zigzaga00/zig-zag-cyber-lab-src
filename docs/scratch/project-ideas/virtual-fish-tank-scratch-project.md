@@ -29,12 +29,11 @@ This project is **all yours to imagine** — solo or with a team. Build it, test
 
 ---
 
-### 🧰 Technique Cards (Practical Skills)
+### 👷🏼‍♀️ Feature Cards (Build Your Projects Using These Features)
 
-Pull these Scratch technique cards when you need help:
+You might want to have a look at **how to build** the following **features** in **your project**:
 
-- 🐱 [Technique Card: Variables in Scratch (practical)](../technique-cards-practical/variables-scratch.md)
-- 🐱 [Technique Card: Broadcast Messages in Scratch (practical)](../technique-cards-practical/broadcast-message-scratch.md)
+- 🟩 [Glide a Sprite](../feature-cards/feature-card-glide-a-sprite.md)
 
 ---
 
