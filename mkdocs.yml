@@ -50,10 +50,14 @@ nav:
   - Scratch:
       - Project Ideas:
           - Virtual Fish Tank: scratch/project-ideas/virtual-fish-tank-scratch-project.md
+      - Feature Cards:
+          - Glide a Sprite: scratch/feature-cards/feature-card-glide-a-sprite.md
       - Technique Cards Practical:
           - Broadcast Messages: scratch/technique-cards-practical/broadcast-message-scratch.md
+          - Coordinates: scratch/technique-cards-practical/coordinates-scratch.md
           - Costumes and Backdrops: scratch/technique-cards-practical/costumes-scratch-practical.md
           - Lists: scratch/technique-cards-practical/lists-scratch.md
+          - Loops: scratch/technique-cards-practical/loops-scratch.md
           - Variables: scratch/technique-cards-practical/variables-scratch.md
       - Technique Cards Deeper:
           - Lists (deeper): scratch/technique-cards-deeper/lists-scratch-deeper.md
@@ -87,6 +91,9 @@ nav:
               - Mission 001:
                   - Mission 001: shadow-net-agency/unit-202/shadow-recruits/mission-001/u202-sr-001-mission.md
                   - Training Card: shadow-net-agency/unit-202/shadow-recruits/mission-001/u202-sr-001-training.md
+              - Mission 002:
+                  - Mission 002: shadow-net-agency/unit-202/shadow-recruits/mission-002/u202-sr-002-mission.md
+                  - Training Card: shadow-net-agency/unit-202/shadow-recruits/mission-002/u202-sr-002-training.md
       - Wiki:
           - SNA Wiki: shadow-net-agency/sna-wiki/sna-wiki-landing.md
           - SNA History:
