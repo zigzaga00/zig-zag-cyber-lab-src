@@ -52,12 +52,14 @@ nav:
           - Virtual Fish Tank: scratch/project-ideas/virtual-fish-tank-scratch-project.md
       - Feature Cards:
           - Glide a Sprite: scratch/feature-cards/feature-card-glide-a-sprite.md
+          - Random Movement: scratch/feature-cards/feature-card-random-movement.md
       - Technique Cards Practical:
           - Broadcast Messages: scratch/technique-cards-practical/broadcast-message-scratch.md
           - Coordinates: scratch/technique-cards-practical/coordinates-scratch.md
           - Costumes and Backdrops: scratch/technique-cards-practical/costumes-scratch-practical.md
           - Lists: scratch/technique-cards-practical/lists-scratch.md
           - Loops: scratch/technique-cards-practical/loops-scratch.md
+          - Random Numbers: scratch/technique-cards-practical/random-numbers-scratch.md
           - Variables: scratch/technique-cards-practical/variables-scratch.md
       - Technique Cards Deeper:
           - Lists (deeper): scratch/technique-cards-deeper/lists-scratch-deeper.md

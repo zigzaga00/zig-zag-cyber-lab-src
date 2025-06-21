@@ -76,12 +76,17 @@ Once inside, look around for:
 - Archived communications
 - Hidden clues
 
-Use the `ls`, `cd` and `cat` commands (from Terminal Tigers training) to:
+Use the `ls` and `cd` commands (from Terminal Tigers training) to:
 
 - **List files**
 - **Change directories**
-- **Read file contents**
 - **Look for usernames, passwords, and secret hints**
+
+To read the contents of files you will need to transfer them to your local machine first using `get secret.txt` if there is one file you want called `secret.txt` or `mget *` if there are lots of files you want to loot.
+
+!!! tip
+
+> You can turn off the confirmation prompt when getting multiple files using `mget *` by typing `prompt` first
 
 ---
 
@@ -124,6 +129,6 @@ Sometimes you’ll find **login credentials** that can be used on **other servic
 
 ### 📹 Video Training Link (Part 1)
 
-[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=8eBkc1-ZpYo)
+[![Watch the video](../../../sna1.png)](./unit-202-sr-002.mp4)
 
 ---

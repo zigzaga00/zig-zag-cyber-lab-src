@@ -34,6 +34,7 @@ This project is **all yours to imagine** — solo or with a team. Build it, test
 You might want to have a look at **how to build** the following **features** in **your project**:
 
 - 🟩 [Glide a Sprite](../feature-cards/feature-card-glide-a-sprite.md)
+- 🟩 [Random Movement](../feature-cards/feature-card-random-movement.md)
 
 ---
 
