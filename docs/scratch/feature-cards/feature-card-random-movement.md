@@ -90,6 +90,6 @@ These **practical technique cards** can help take your understanding further:
 
 ### 📹 Video Link
 
-[![Watch the video](../cat4.png)](./random-1.mp4)
+[![Watch the video](../cat4.png)](https://www.youtube.com/watch?v=-683L5EvWVM)
 
 ---

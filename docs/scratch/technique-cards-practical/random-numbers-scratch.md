@@ -67,6 +67,6 @@ It chooses a random **whole number** (integer) between the two numbers you set.
 
 ### 📹 Video Link
 
-[![Watch the video](../cat4.png)](./random-2.mp4)
+[![Watch the video](../cat4.png)](https://www.youtube.com/watch?v=YgADdIepZ0s)
 
 ---

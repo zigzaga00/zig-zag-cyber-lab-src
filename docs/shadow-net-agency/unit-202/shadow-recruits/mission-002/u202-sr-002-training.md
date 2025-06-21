@@ -129,6 +129,6 @@ Sometimes you’ll find **login credentials** that can be used on **other servic
 
 ### 📹 Video Training Link (Part 1)
 
-[![Watch the video](../../../sna1.png)](./unit-202-sr-002.mp4)
+[![Watch the video](../../../sna1.png)](https://www.youtube.com/watch?v=8eBkc1-ZpYo)
 
 ---

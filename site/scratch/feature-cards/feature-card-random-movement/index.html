@@ -1,0 +1,3688 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../feature-card-glide-a-sprite/">
+      
+      
+        <link rel="next" href="../../technique-cards-practical/broadcast-message-scratch/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.12">
+    
+    
+      
+        <title>Feature Card - Random Movement - Zig-Zag Cyber Lab</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2afb09e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Open Sans";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#feature-card-random-movement" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Zig-Zag Cyber Lab" class="md-header__button md-logo" aria-label="Zig-Zag Cyber Lab" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Zig-Zag Cyber Lab
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Feature Card - Random Movement
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Zig-Zag Cyber Lab" class="md-nav__button md-logo" aria-label="Zig-Zag Cyber Lab" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Zig-Zag Cyber Lab
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../landing/landing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Landing Page
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Data Handling
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Data Handling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technique Cards Practical
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Technique Cards Practical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data-handling/technique-cards-practical/csv-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSV Files
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data-handling/technique-cards-practical/spreadsheets-basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Spreadsheet Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data-handling/technique-cards-practical/two-graph/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Two Graph
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technique Cards Deeper
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technique Cards Deeper
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data-handling/technique-cards-deeper/correlation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Correlation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data-handling/technique-cards-deeper/graph-choice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Graph Choice
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data-handling/technique-cards-deeper/percentages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Percentages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../data-handling/technique-cards-deeper/stories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Stories
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Digital Changemakers
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Digital Changemakers
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Project Ideas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Project Ideas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../digital-changemakers/project-ideas/fishy-business-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fishy Business
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../digital-changemakers/project-ideas/forest-explorers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Forest Explorers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../digital-changemakers/project-ideas/local-food-global-impact-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Local Food, Global Impact
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../digital-changemakers/project-ideas/local-food-global-impact-scratch-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Local Food, Global Impact (scratch version)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../digital-changemakers/project-ideas/mood-menders/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mood Menders
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technique Cards Deeper
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technique Cards Deeper
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../digital-changemakers/technique-cards-deeper/carbon-footprints-deeper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Carbon Footprints (deeper)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    HTML
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            HTML
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technique Cards Practical
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Technique Cards Practical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../html/technique-cards-practical/html-basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basics
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../html/technique-cards-practical/html-images-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Images 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../html/technique-cards-practical/html-links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Project Ideas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Project Ideas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/project-ideas/band-name-generator-python-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Band Name Generator
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technique Cards Practical
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            Technique Cards Practical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/bar-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bar Charts (matplotlib)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/csv-pandas-practical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSV Files (Pandas)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/dict-python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dictionaries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/filtering-pandas-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filtering Data (Pandas)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/indexing-python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Indexing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/input-python-practical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Input
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/iterating-dict/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Iterating Dictionaries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/lists-python-practical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/random-choice-list-python-practical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Random Choice from Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/scatter-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Scatter Graphs (matplotlib)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/str-int-python-practical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strings and Integers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-practical/tuples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tuples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technique Cards Deeper
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Technique Cards Deeper
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-deeper/lists-python-deeper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists (deeper)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-deeper/modules-python-deeper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modules (deeper)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-deeper/series-df/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pandas Series and Dataframes (deeper)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../python/technique-cards-deeper/str-int-python-deeper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    String and Integer (deeper)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Scratch
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Scratch
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Project Ideas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            Project Ideas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project-ideas/virtual-fish-tank-scratch-project/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Virtual Fish Tank
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Feature Cards
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            Feature Cards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../feature-card-glide-a-sprite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Glide a Sprite
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Random Movement
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Random Movement
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feature-card-random-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟩🐱 Feature Card: Random Movement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟩🐱 Feature Card: Random Movement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 What Is It?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-could-try" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 You Could Try…
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 You Could Try…">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jump-to-random-positions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Jump to Random Positions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glide-to-random-places-smoothly" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Glide to Random Places Smoothly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-in-random-directions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Move in Random Directions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-speed-randomly" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Change Speed Randomly
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combine-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Combine With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Challenges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-cards-practical-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧰 Technique Cards (Practical Skills)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-this-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 When to use this Feature
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 When to use this Feature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      📹 Video Link
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technique Cards Practical
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Technique Cards Practical
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique-cards-practical/broadcast-message-scratch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Broadcast Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique-cards-practical/coordinates-scratch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coordinates
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique-cards-practical/costumes-scratch-practical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Costumes and Backdrops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique-cards-practical/lists-scratch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique-cards-practical/loops-scratch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Loops
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique-cards-practical/random-numbers-scratch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Random Numbers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique-cards-practical/variables-scratch/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Variables
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Technique Cards Deeper
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            Technique Cards Deeper
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../technique-cards-deeper/lists-scratch-deeper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lists (deeper)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Shadow Net Agency
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Shadow Net Agency
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/sna-landing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SNA
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Unit 101
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Unit 101
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/unit-101-the-terminal-tigers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terminal Tigers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2" id="__nav_8_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Shadow Recruits
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Shadow Recruits
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/unit-101-the-terminal-tigers-shadow-recruit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Terminal Tigers Shadow Recruits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2_2" id="__nav_8_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mission 001
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mission 001
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-001/u101-sr-001-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission 001
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-001/u101-sr-001-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Card
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2_3" id="__nav_8_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mission 002
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Mission 002
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-002/u101-sr-002-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission 002
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-002/u101-sr-002-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Card
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2_4" id="__nav_8_2_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mission 003
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Mission 003
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-003/u101-sr-003-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission 003
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-003/u101-sr-003-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Card
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2_5" id="__nav_8_2_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mission 004
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Mission 004
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-004/u101-sr-004-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission 004
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-004/u101-sr-004-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Card
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2_6" id="__nav_8_2_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mission 005
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_2_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Mission 005
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-005/u101-sr-005-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission 005
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-005/u101-sr-005-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Card
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_2_7" id="__nav_8_2_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mission 006
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_2_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Mission 006
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-101/shadow-recruits/mission-006/u101-sr-006-shadow-vault/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission 006
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Unit 202
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3">
+            <span class="md-nav__icon md-icon"></span>
+            Unit 202
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-202/unit-202-the-network-geckos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Network Geckos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3_2" id="__nav_8_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Shadow Recruits
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Shadow Recruits
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-202/shadow-recruits/unit-202-the-network-geckos-shadow-recruit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Network Geckos Shadow Recruits
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3_2_2" id="__nav_8_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mission 001
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Mission 001
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-202/shadow-recruits/mission-001/u202-sr-001-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission 001
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-202/shadow-recruits/mission-001/u202-sr-001-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Card
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_3_2_3" id="__nav_8_3_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Mission 002
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_8_3_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_3_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Mission 002
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-202/shadow-recruits/mission-002/u202-sr-002-mission/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mission 002
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/unit-202/shadow-recruits/mission-002/u202-sr-002-training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Card
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Wiki
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            Wiki
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/sna-wiki/sna-wiki-landing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SNA Wiki
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_4_2" id="__nav_8_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    SNA History
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            SNA History
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../shadow-net-agency/sna-wiki/sna-wiki-history/blackout-protocol-incident/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Blackout Protocol Incident
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#feature-card-random-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      🟩🐱 Feature Card: Random Movement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🟩🐱 Feature Card: Random Movement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 What Is It?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#you-could-try" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 You Could Try…
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 You Could Try…">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jump-to-random-positions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Jump to Random Positions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#glide-to-random-places-smoothly" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Glide to Random Places Smoothly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#move-in-random-directions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Move in Random Directions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-speed-randomly" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Change Speed Randomly
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combine-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 Combine With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      🛠️ Challenges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-cards-practical-skills" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧰 Technique Cards (Practical Skills)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-this-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎯 When to use this Feature
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎯 When to use this Feature">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#video-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      📹 Video Link
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Random Movement</h1>
+
+<h2 id="feature-card-random-movement">🟩🐱 <strong>Feature Card: Random Movement</strong></h2>
+<p><strong>Type:</strong> Feature
+<strong>Useful for:</strong> Creating lifelike fish, monsters, random movement, and surprises in Scratch projects</p>
+<hr />
+<h3 id="what-is-it">🧠 What Is It?</h3>
+<p>Random movement makes your sprite behave <strong>unexpectedly or differently each time</strong>. It adds life to fish in a tank, wandering monsters, or floating space junk. You can make sprites move to <strong>random places</strong>, in <strong>random directions</strong>, or at <strong>random speeds</strong>.</p>
+<hr />
+<h3 id="you-could-try">🧪 You Could Try…</h3>
+<h4 id="jump-to-random-positions">🔹 <strong>Jump to Random Positions</strong></h4>
+<p>Use this for teleporting, bubbles popping, or blinking stars:</p>
+<p><img alt="random-1" src="../random-1.png" /></p>
+<p><img alt="random-2" src="../random-2.png" /></p>
+<hr />
+<h4 id="glide-to-random-places-smoothly">🔹 <strong>Glide to Random Places Smoothly</strong></h4>
+<p>Use this to make a fish or ghost glide across the screen:</p>
+<p><img alt="random-3" src="../random-3.png" /></p>
+<hr />
+<h4 id="move-in-random-directions">🔹 <strong>Move in Random Directions</strong></h4>
+<p>Use this to simulate wandering or swimming:</p>
+<p><img alt="random-4" src="../random-4.png" /></p>
+<hr />
+<h4 id="change-speed-randomly">🔹 <strong>Change Speed Randomly</strong></h4>
+<p>Change the number of steps the sprite moves each time:</p>
+<p><img alt="random-5" src="../random-5.png" /></p>
+<hr />
+<h3 id="combine-with">💡 Combine With</h3>
+<ul>
+<li>🎲 <code>pick random</code> (from <strong>Operators</strong>)</li>
+<li>🔁 Loops (from <strong>Control</strong>)</li>
+<li>🌊 <code>glide</code>, <code>move</code>, <code>go to</code> (from <strong>Motion</strong>)</li>
+</ul>
+<hr />
+<h3 id="challenges">🛠️ Challenges</h3>
+<ul>
+<li>Make a sprite glide around like a fish in a tank.</li>
+<li>Create bubbles that pop at random spots.</li>
+<li>Make a monster spawn at a random location every few seconds.</li>
+<li>Add random speed or direction to keep things unpredictable.</li>
+<li>Use random movement + timers to create <strong>“catch the sprite”</strong> style games.</li>
+</ul>
+<hr />
+<h3 id="technique-cards-practical-skills">🧰 Technique Cards (Practical Skills)</h3>
+<p>These <strong>practical technique cards</strong> can help take your understanding further:</p>
+<ul>
+<li>🐱 <a href="../../technique-cards-practical/coordinates-scratch/">Technique Card: Coordinates in Scratch</a></li>
+<li>🐱 <a href="../../technique-cards-practical/loops-scratch/">Technique Card: Loops in Scratch</a></li>
+<li>🐱 <a href="../../technique-cards-practical/random-numbers-scratch/">Technique Card: Random Numbers in Scratch</a></li>
+</ul>
+<hr />
+<h2 id="when-to-use-this-feature">🎯 When to use this Feature</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Project Examples</strong></th>
+<th><strong>Why Random Works</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../project-ideas/virtual-fish-tank-scratch-project/">Virtual Fish Tank</a></td>
+<td>Random fish movement around the tank</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="video-link">📹 Video Link</h3>
+<p><a href="https://www.youtube.com/watch?v=-683L5EvWVM"><img alt="Watch the video" src="../../cat4.png" /></a></p>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
