@@ -29,6 +29,8 @@ nav:
   - Python:
       - Project Ideas:
           - Band Name Generator: python/project-ideas/band-name-generator-python-project.md
+      - Feature Cards:
+          - Random Generator: python/feature-cards/random-generator-feature.md
       - Technique Cards Practical:
           - Bar Charts (matplotlib): python/technique-cards-practical/bar-1.md
           - CSV Files (Pandas): python/technique-cards-practical/csv-pandas-practical.md

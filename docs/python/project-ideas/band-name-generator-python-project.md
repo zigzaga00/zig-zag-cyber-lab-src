@@ -32,12 +32,9 @@ Code a **Band Name Generator** using Python! When someone runs your program, it 
 
 ---
 
-### 🧰 Helpful Technique Cards:
+### 🟩 Helpful Feature Cards:
 
-- 🐍 [Technique Card: str and int in Python (practical)](../technique-cards-practical/str-int-python-practical.md)
-- 🐍 [Technique Card: Getting a Random Choice from a List in Python (practical)](../technique-cards-practical/random-choice-list-python-practical.md)
-- 🐍 [Technique Card: Lists in Python (practical)](../technique-cards-practical/lists-python-practical.md)
-- 🐍 [Technique Card: Getting Input From the User in Python (practical)](../technique-cards-practical/input-python-practical.md)
+- 🐍 [Feature Card: Build a Random Generator (python)](../feature-cards/random-generator-feature.md)
 
 ---
 
