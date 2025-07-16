@@ -93,8 +93,6 @@ To protect children and volunteers:
 
 Children may create digital content (e.g. photos, videos, artwork) as part of their projects. While using their own devices, we ask that children do not take photos or videos of others without permission. We also request that no images or video footage taken during the club are shared online or on social media.
 
-In future, if club-owned devices are provided, these will be managed to ensure content such as children's code or artwork is stored safely and no images or videos of children will be stored on them.
-
 ---
 
 ## **10. Policy Review**
