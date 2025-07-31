@@ -1,14 +1,14 @@
-# 🧪 **Welcome to the Zig-Zag Cyber Lab** 🧪
+# 💖 **Welcome to the Sisters In2 Tech** 💖
 
 Use the **navigation bar** on the left of the screen to find what you want.
 
-You can use our **technique cards (practical)** to learn what you need in order to build your own projects.
-
-Our **technique cards (deeper)** give you more understanding of what is happening and are useful if you want to know more.
-
-If you are stuck for ideas, our **project ideas** cards are filled with inspirational projects!
+Or to get started having fun quickly check out the projects below!
 
 ## ✨ Featured Projects! ✨
+
+- [Mash-a-Monster - Scratch](https://drive.google.com/file/d/1N9YNzPlBizEZBeDx3M_LHiEeqtT-6Ngh/view?usp=sharing)
+
+- [Maze Game - Scratch](https://drive.google.com/file/d/1O5gbvO3mqDqgd2R5YbHlMBzKDEWwImN4/view?usp=sharing)
 
 - [Band Name Generator](../python/project-ideas/band-name-generator-python-project.md)
 
