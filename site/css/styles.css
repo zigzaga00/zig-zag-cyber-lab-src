@@ -441,6 +441,15 @@ Contact
   text-align: left;
   max-width: 35rem;
 }
+
+.contact-text a {
+  color: var(--clr-grey-5);
+}
+
+.contact-text a:hover {
+  color: var(--clr-primary-light);
+}
+
 @media screen and (min-width: 992px) {
   .contact-details,
   .contact-info {
