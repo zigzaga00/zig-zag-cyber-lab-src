@@ -1,6 +1,6 @@
 # **Child Protection Policy**
 
-**Club:** Zig-Zag Cyber-Lab
+**Club:** Sisters In2 Tech Stratford (Sin2 Tech)
 
 **Date of Policy:** 13.07.25
 
@@ -18,7 +18,7 @@
 
 ## **1. Statement of Intent**
 
-We are committed to creating a safe, supportive, and inclusive environment for all children and young people who take part in the Girls' Computing Club. We recognise the responsibility to protect participants from harm and will take all reasonable steps to promote their welfare and respond appropriately to any concerns.
+We are committed to creating a safe, supportive, and inclusive environment for all children and young people who attend Sin2 Tech Stratford. We recognise the responsibility to protect participants from harm and will take all reasonable steps to promote their welfare and respond appropriately to any concerns.
 
 ---
 
@@ -46,7 +46,7 @@ Abuse can take many forms and may include:
 
 ## **4. Responsibilities**
 
-At Zig-Zag Cyber-Lab, we will:
+At Sin2 Tech, we will:
 
 - Remain vigilant to the signs of abuse or harm
 - Treat all disclosures seriously and sensitively

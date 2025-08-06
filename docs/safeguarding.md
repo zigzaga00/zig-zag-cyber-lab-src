@@ -1,6 +1,6 @@
 # **Safeguarding Policy**
 
-**Club:** Zig-Zag Cyber-Lab
+**Club:** Sisters In2 Tech Stratford (Sin2 Tech)
 
 **Date of Policy:** 13.07.25
 
@@ -18,9 +18,9 @@
 
 ## **1. Policy Statement**
 
-We are committed to safeguarding all children and young people who attend the Zig-Zag Cyber-Lab. Safeguarding is broader than child protection and includes promoting welfare, preventing harm, and creating safe and supportive spaces for learning and exploration.
+We are committed to safeguarding all children and young people who attend Sin2 Tech. Safeguarding is broader than child protection and includes promoting welfare, preventing harm, and creating safe and supportive spaces for learning and exploration.
 
-This policy outlines how we will ensure a safe environment for children aged 7–17 who attend our sessions.
+This policy outlines how we will ensure a safe environment for children who attend our sessions.
 
 ---
 
@@ -98,13 +98,13 @@ Any concern or disclosure will be:
 - Taken seriously
 - Recorded factually and securely
 - Reported to the local safeguarding team or LADO (Local Authority Designated Officer)
-- Treated in line with the Zig-Zag Cyber-Lab's Child Protection Policy
+- Treated in line with Sin2 Tech's Child Protection Policy
 
 ---
 
 ## **11. Online Privacy**
 
-The Zig-Zag Cyber-Lab is committed to protecting children's privacy while they explore and create using technology.
+Sin2 Tech is committed to protecting children's privacy while they explore and create using technology.
 
 - We do not collect or store children’s personal data unless it is necessary for safeguarding, communication, or consent purposes, and only with permission from parents or carers.
 - Children will be supported to understand how to protect their own privacy online, including using safe usernames, not sharing personal information, and recognising when to ask for help.
@@ -117,7 +117,7 @@ The Zig-Zag Cyber-Lab is committed to protecting children's privacy while they e
 
 ## **13. A Safe and Supportive Environment**
 
-The Zig-Zag Cyber-Lab safeguarding approach is not only about protection — it is about creating the kind of space where children can be happy and thrive by feeling confident, valued, and inspired to learn.
+The Sin2 Tech safeguarding approach is not only about protection — it is about creating the kind of space where children can be happy and thrive by feeling confident, valued, and inspired to learn.
 
 We will:
 
