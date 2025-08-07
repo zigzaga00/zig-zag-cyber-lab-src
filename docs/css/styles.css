@@ -18,6 +18,7 @@ Variables
   --clr-grey-5: #617d98;
   --clr-grey-10: #f1f5f8;
   --clr-white: #fff;
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --ff-primary: "Catamaran", sans-serif;
   --ff-secondary: "Grand Hotel", serif;
   --transition: all 0.3s linear;
@@ -490,4 +491,73 @@ Footer
 } */
 .company {
   color: var(--clr-primary);
+}
+
+/*
+==========
+Scratch Project Gallery
+==========
+*/
+
+.section {
+  padding: 5rem 0;
+}
+.section-title-2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title-2 h2 {
+  text-transform: uppercase;
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+}
+.section-title-2 span {
+  color: var(--clr-primary-5);
+}
+.scratch-card {
+  transition: var(--transition);
+  background: var(--clr-grey-10);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+}
+.scratch-card:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+.scratch-img {
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
+}
+.scratch-project-info {
+  padding: 1.25rem 1.5rem;
+}
+/* extra css */
+.scratch-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.scratch-title p,
+.scratch-title h4 {
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+.scratch-title p {
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 768px) {
+  .featured-centre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .scratch-card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .scratch-card {
+    flex: 0 0 calc(33.333% - 2rem);
+  }
 }
