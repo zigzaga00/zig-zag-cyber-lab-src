@@ -573,11 +573,6 @@ Contact
   max-width: 26rem;
   color: var(--clr-grey-5);
 }
-.contact-details-text {
-  text-transform: uppercase;
-  max-width: 26rem;
-  color: var(--clr-grey-5);
-}
 .contact-info {
   text-align: left;
   max-width: 35rem;
@@ -589,6 +584,23 @@ Contact
 
 .contact-text a:hover {
   color: var(--clr-primary-light);
+}
+
+.join-us {
+  max-width: 26rem;
+  color: var(--clr-grey-5);
+}
+
+.join-us strong {
+  font-weight: bold;
+}
+
+.club-name,
+.time,
+.location {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--clr-primary);
 }
 
 @media screen and (min-width: 992px) {
