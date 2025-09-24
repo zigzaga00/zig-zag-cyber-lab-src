@@ -52,7 +52,8 @@ img {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
@@ -68,6 +69,9 @@ h3 {
   font-size: 1.5rem;
 }
 h4 {
+  font-size: 0.875rem;
+}
+h5 {
   font-size: 0.875rem;
 }
 p {
@@ -86,13 +90,17 @@ p {
   h4 {
     font-size: 1rem;
   }
+  h5 {
+    font-size: 1rem;
+  }
   body {
     font-size: 1rem;
   }
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     line-height: 1;
   }
 }
@@ -700,8 +708,14 @@ Scratch Project Gallery
   margin-bottom: 0.75rem;
   line-height: 1.25;
 }
-.scratch-title p {
+.scratch-project-info p {
   color: var(--clr-grey-5);
+}
+.scratch-project-info a {
+  color: var(--clr-primary);
+}
+.scratch-project-info a:hover {
+  color: var(--clr-tertiary);
 }
 @media screen and (min-width: 768px) {
   .featured-centre {

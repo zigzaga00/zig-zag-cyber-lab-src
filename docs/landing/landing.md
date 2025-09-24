@@ -7,13 +7,13 @@ They **walk** you **through** how to **make cool projects**!
 
 ### 🥳 Scratch! 🥳
 
-- [Crystal Flowers](https://drive.google.com/file/d/1GVKN2WFkkwex4TlmpYiA6c-eWNeHNFvN/view?usp=sharing)
+- [Crystal Flowers](https://drive.google.com/file/d/1tGTbTSGntA-nCt_fGbaQEmHIsJpsyTc5/view?usp=drive_link)
 
-- [Mash-a-Monster](https://drive.google.com/file/d/1B8nj6-ss9sgaQGERrQgj3OhrYBXXyizr/view?usp=sharing)
+- [Mash-a-Monster](https://drive.google.com/file/d/1b6Ume0bl7Hv7riSFX7kQu0DlWXLIxJ4f/view?usp=sharing)
 
-- [Maze Game](https://drive.google.com/file/d/1RwwlY1MgUcUKeCyOiNB9-suNVseprfFh/view?usp=sharing)
+- [Maze Game](https://drive.google.com/file/d/1Mgt9TP-6h1p3DPDg76-zvCBmMhMjw9Qi/view?usp=sharing)
 
-- [What Are You?](https://drive.google.com/file/d/1wwIYTiyvNqrW77E01jI7zT8Ue4Bc9ii5/view?usp=sharing)
+- [What Are You?](https://drive.google.com/file/d/1mcGcNsX5c54O98OAsMa7QDxe-zKLvysk/view?usp=sharing)
 
 ---
 
