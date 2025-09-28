@@ -660,10 +660,12 @@ Footer
 
 /*
 ==========
-Scratch Project Gallery
+Code Project Gallery
 ==========
 */
-
+#python {
+  background-color: var(--clr-grey-10);
+}
 .section {
   padding: 5rem 0;
 }
@@ -679,42 +681,98 @@ Scratch Project Gallery
 .section-title-2 span {
   color: var(--clr-primary-5);
 }
-.scratch-card {
+.code-card {
   transition: var(--transition);
   background: var(--clr-grey-10);
   box-shadow: var(--light-shadow);
   margin-bottom: 2rem;
 }
-.scratch-card:hover {
+.code-card:hover {
   box-shadow: var(--dark-shadow);
   transform: scale(1.02);
 }
-.scratch-img {
+.code-card-white {
+  transition: var(--transition);
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+}
+.code-card-white:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+.code-img {
   height: 15rem;
   width: 100%;
   object-fit: cover;
 }
-.scratch-project-info {
+.code-project-info {
   padding: 1.25rem 1.5rem;
 }
+.code-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-top: 1px solid #eee;
+  background-color: var(--clr-secondary);
+}
+.code-card-example-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border-top: 1px solid #eee;
+  background-color: var(--clr-primary-light);
+}
+.tag {
+  display: inline-block;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.tag-example {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.tag:hover {
+  color: var(--clr-primary);
+  background-color: var(--clr-tertiary);
+}
+.tag-example:hover {
+  color: var(--clr-primary);
+  background-color: var(--clr-tertiary);
+}
 /* extra css */
-.scratch-title {
+.code-title {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.scratch-title p,
-.scratch-title h4 {
+.code-title p,
+.code-title h4 {
   margin-bottom: 0.75rem;
   line-height: 1.25;
 }
-.scratch-project-info p {
+.code-project-info p {
   color: var(--clr-grey-5);
 }
-.scratch-project-info a {
+.code-project-info a {
   color: var(--clr-primary);
 }
-.scratch-project-info a:hover {
+.code-project-info a:hover {
   color: var(--clr-tertiary);
 }
 @media screen and (min-width: 768px) {
@@ -723,12 +781,18 @@ Scratch Project Gallery
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .scratch-card {
+  .code-card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+  .code-card-white {
     flex: 0 0 calc(50% - 2rem);
   }
 }
 @media screen and (min-width: 1170px) {
-  .scratch-card {
+  .code-card {
+    flex: 0 0 calc(33.333% - 2rem);
+  }
+  .code-card-white {
     flex: 0 0 calc(33.333% - 2rem);
   }
 }
