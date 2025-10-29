@@ -796,3 +796,22 @@ Code Project Gallery
     flex: 0 0 calc(33.333% - 2rem);
   }
 }
+
+/* Ensure all code cards are equal height and footer sticks to bottom */
+.code-card,
+.code-card-white {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Let the info/content area expand to fill space */
+.code-project-info {
+  flex-grow: 1;
+}
+
+
+/* Footers should never shrink and stay pinned at bottom */
+.code-card-footer,
+.code-card-example-footer {
+  flex-shrink: 0;
+}
