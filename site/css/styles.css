@@ -426,6 +426,16 @@ Mission
 
 /*
 ==========
+Girl Gallery
+==========
+*/
+#girl-gallery {
+  background-color: var(--clr-grey-10);
+}
+
+
+/*
+==========
 Projects
 ==========
 */
@@ -562,7 +572,7 @@ Contact
 ==========
 */
 .contact {
-  background: var(--clr-grey-10);
+  background: var(--clr-white);
 }
 .contact-details,
 .contact-info {
@@ -697,9 +707,19 @@ Code Project Gallery
   box-shadow: var(--light-shadow);
   margin-bottom: 2rem;
 }
+.code-card-white-gallery {
+  transition: var(--transition);
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+}
 .code-card-white:hover {
   box-shadow: var(--dark-shadow);
   transform: scale(1.02);
+}
+.code-card-white-gallery:hover {
+  box-shadow: 0 0 12px 2px #ffb6c1, 0 0 18px 6px #ffd700;
+  transition: box-shadow 0.3s ease-in-out;
 }
 .code-img {
   height: 15rem;
@@ -787,7 +807,11 @@ Code Project Gallery
   .code-card-white {
     flex: 0 0 calc(50% - 2rem);
   }
-}
+  }
+  .code-card-white-gallery {
+    flex: 0 0 calc(50% - 2rem);
+  }
+
 @media screen and (min-width: 1170px) {
   .code-card {
     flex: 0 0 calc(33.333% - 2rem);
@@ -795,11 +819,15 @@ Code Project Gallery
   .code-card-white {
     flex: 0 0 calc(33.333% - 2rem);
   }
+  .code-card-white-gallery {
+    flex: 0 0 calc(33.333% - 2rem);
+  }
 }
 
 /* Ensure all code cards are equal height and footer sticks to bottom */
 .code-card,
-.code-card-white {
+.code-card-white,
+.code-card-white-gallery {
   display: flex;
   flex-direction: column;
 }
@@ -814,4 +842,72 @@ Code Project Gallery
 .code-card-footer,
 .code-card-example-footer {
   flex-shrink: 0;
+}
+
+/*
+==========
+Girl Power Gallery Confetti
+==========
+*/
+.code-card-white-gallery {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glitter confetti layer */
+.code-card-white-gallery::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  background-image:
+    radial-gradient(circle, #ff69b4 1.5px, transparent 1.5px),
+    radial-gradient(circle, #ffd700 1.5px, transparent 1.5px),
+    radial-gradient(circle, #87cefa 1.5px, transparent 1.5px),
+    radial-gradient(circle, #98fb98 1.5px, transparent 1.5px),
+    radial-gradient(circle, #ffb347 1.5px, transparent 1.5px),
+    radial-gradient(circle, #ffa07a 1.5px, transparent 1.5px),
+    radial-gradient(circle, #dda0dd 1.5px, transparent 1.5px),
+    radial-gradient(circle, #00fa9a 1.5px, transparent 1.5px),
+    radial-gradient(circle, #ff1493 1.5px, transparent 1.5px),
+    radial-gradient(circle, #1e90ff 1.5px, transparent 1.5px);
+  background-size: 25px 25px;
+  background-position: 0 0, 12px 8px, 6px 20px, 18px 15px, 9px 3px,
+                      3px 10px, 15px 0, 20px 22px, 10px 18px, 5px 25px;
+  transition: opacity 0.4s ease;
+}
+
+/* Hover animation */
+.code-card-white-gallery:hover::before {
+  opacity: 1;
+  animation: floatConfetti 1.5s ease-out forwards;
+}
+
+@keyframes floatConfetti {
+  0% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(40px); opacity: 0; }
+}
+
+/*
+==========
+Girl Power Gallery Shimmering Heading
+==========
+*/
+#girl-gallery h2 {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(90deg, #ffb6c1, #ff69b4, #ffd700, #ff69b4);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s infinite linear;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
 }
