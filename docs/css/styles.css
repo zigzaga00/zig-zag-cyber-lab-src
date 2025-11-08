@@ -426,10 +426,10 @@ Mission
 
 /*
 ==========
-Girl Gallery
+Girl Power Gallery
 ==========
 */
-#girl-gallery {
+#girl-power-gallery {
   background-color: var(--clr-grey-10);
 }
 
@@ -897,7 +897,7 @@ Girl Power Gallery Confetti
 Girl Power Gallery Shimmering Heading
 ==========
 */
-#girl-gallery h2 {
+#girl-power-gallery h2 {
   position: relative;
   display: inline-block;
   background: linear-gradient(90deg, #ffb6c1, #ff69b4, #ffd700, #ff69b4);
