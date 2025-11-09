@@ -297,6 +297,14 @@ Header
   /* animation */
   overflow-x: hidden;
 }
+.header-gallery {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6)),
+    url("../images/gallery-1.jpg") center/cover no-repeat fixed;
+  position: relative;
+  /* animation */
+  overflow-x: hidden;
+}
 .banner {
   text-align: center;
   position: absolute;
@@ -429,10 +437,13 @@ Mission
 Girl Power Gallery
 ==========
 */
-#girl-power-gallery {
+.grey {
   background-color: var(--clr-grey-10);
 }
 
+.grey-darker {
+  background-color: var(--clr-grey-5);
+}
 
 /*
 ==========
@@ -842,6 +853,18 @@ Code Project Gallery
 .code-card-footer,
 .code-card-example-footer {
   flex-shrink: 0;
+}
+
+/* Girl-Gallery Button */
+.gallery-btn {
+  outline: 0.125rem solid var(--clr-primary);
+  outline-offset: 0.25rem;
+  font-size: 1.25rem;
+  padding: 1rem 1.75rem;
+  /* animation */
+  animation: show 3s linear 1;
+  display: block;
+  margin: 0 auto;
 }
 
 /*
