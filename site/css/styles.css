@@ -36,7 +36,7 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: var(--clr-primary);
+  font-family: var(--ff-primary);
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -305,12 +305,31 @@ Header
   /* animation */
   overflow-x: hidden;
 }
+.header-code-projects {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url("../images/code-2.jpg") center/cover no-repeat fixed;
+  position: relative;
+  /* animation */
+  overflow-x: hidden;
+}
+.header-python-projects {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)),
+    url("../images/code-11.jpg") center/cover no-repeat fixed;
+  position: relative;
+  /* animation */
+  overflow-x: hidden;
+}
 .banner {
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.banner h1 {
+  font-size: 2.75rem;
 }
 .banner h2 {
   font-family: var(--ff-secondary);
@@ -787,6 +806,10 @@ Code Project Gallery
   background-color: var(--clr-tertiary);
 }
 /* extra css */
+.code-intro {
+  font-size: 1.75rem;
+  text-align: center;
+}
 .code-title {
   display: flex;
   justify-content: space-between;
